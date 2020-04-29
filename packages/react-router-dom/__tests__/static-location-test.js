@@ -5,7 +5,7 @@ import { StaticRouter as Router } from 'react-router-dom/server';
 
 describe('A <StaticRouter>', () => {
   describe('with a string location prop', () => {
-    it('parses the location into an object', () => {
+    it.only('parses the location into an object', () => {
       let location;
       function LocationChecker(props) {
         location = useLocation();
